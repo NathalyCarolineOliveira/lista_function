@@ -6,11 +6,20 @@
     */
 
     //Entrada
+    const frase = prompt(`Informe uma frase:`).trim().toLowerCase();
+    const letra = prompt(`Informe uma letra:`).trim().toLowerCase();
+    contLetra = 0
 
 
     //Processamento
-
+    function contagem() {
+        for (const item of palavra) {
+            if (item == letra)
+                contLetra++
+        }
+        return contLetra
+    }
 
     //Saída
-
+    alert(`A quantidade da letra informada nesta palavra é de ${contagem()}`)
 </script>

@@ -6,7 +6,17 @@
     */
 
     //Entrada
-
+    const num = Number(prompt(`Informe um número inteiro.`));
+    let cubo = 3
+    function calc (num, calc) {
+        if(Number.isInteger(num)){
+            num = num**cubo
+            alert(num)
+        }
+        else
+        alert(`Não é um número inteiro`)
+    }
+    calc(num, cubo)
 
     //Processamento
 
